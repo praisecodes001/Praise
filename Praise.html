@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praise Komolafe - Web Developer & UI/UX Designer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;404;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f9f6acc074.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Praise.css">
+</head>
+
+<body>
+
+    <nav id="navBar">
+        <a href="#" class="logo">Praise.</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-bars menu-toggle" onclick="togglebtn()"></i>
+            <i class="fa-solid fa-toggle-on theme-toggle" onclick="myFunction()"></i>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p>Web-Developer & UI/UX Designer</p>
+                    <h1>Hi, I'm <span class="name">Praise</span> Komolafe<br> from <span class="country">Nigeria</span> </h1>
+                    <p class="hero-description">Crafting engaging and user-centric digital experiences with a focus on modern web technologies and intuitive design.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Get a Quote</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row about-content">
+                    <div class="about-col-1">
+                        <img src="image/Me.jpg" alt="Portrait of Praise Komolafe, a web developer and UI/UX designer." class="about-img">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="section-title">About Me</h2>
+                        <p>
+                            With a proven track record in web design and development since 2011, I bring extensive expertise in front-end and back-end development, encompassing languages and technologies such as HTML, CSS, JavaScript, and Python. I offer comprehensive website solutions, from impactful portfolio showcases to fully functional e-commerce stores, all while remaining budget-conscious. Leveraging both custom coding and platforms like WordPress and Wix, I ensure flexibility and efficiency. Clients benefit from my 24/7 online availability for inquiries and my unwavering commitment to on-time project delivery.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')" data-tab-target="skills">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" data-tab-target="experience">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')"   data-tab-target="education">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX Design</span><br>Designing intuitive and engaging web/app interfaces.</li>
+                                <li><span>Web Development</span><br>Developing responsive and dynamic web applications.</li>
+                                <li><span>Mobile App Development</span><br>Building user-friendly Android/iOS applications.</li>
+                                <li><span>Software Development</span><br>Creating and managing robust software solutions. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - 2023</span><br>Senior Software Developer at cYBERcITY. </li>
+                                <li><span>2019 - 2021</span><br>UI/UX Training at OL.</li>
+                                <li><span>2016 - 2018</span><br>Software Team Leader at cYBERcITY.</li>
+                                <li><span>2014 - 2016</span><br>Internship at cYBERcITY.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Studying Software Engineering at Babcock University.</li>
+                                <li><span>2021</span><br>Certificate From Sololearn.</li>
+                                <li><span>2014</span><br>OND from Parent's Choice College.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">My Services</h2>
+                <div class="services-grid">
+                    <div class="services-card">
+                        <img src="image/Web.jpeg" alt="Website Development Services" class="service-img">
+                        <div class="overlay">
+                            <div class="text-content">
+                                <h3>Website Development</h3>
+                                <p>Get a professional website to sell products or market your services effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <img src="image/app.jpeg" alt="Android and iOS App Development Services" class="service-img">
+                        <div class="overlay">
+                            <div class="text-content">
+                                <h3>Android and iOS App</h3>
+                                <p>Convert your website into a mobile app that customers can easily download and use.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <img src="image/grapic.jpeg" alt="Graphic Design Services for Logos and Branding" class="service-img">
+                        <div class="overlay">
+                            <div class="text-content">
+                                <h3>Graphic Design</h3>
+                                <p>Let's create a striking personal or business logo if you don't already have one.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <img src="image/ui.jpeg" alt="UI/UX Design Services for Websites and Apps" class="service-img">
+                        <div class="overlay">
+                            <div class="text-content">
+                                <h3>UI/UX Design</h3>
+                                <p>Harness the power of UI/UX to create a beautiful and intuitive design for your digital product.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <img src="image/Soft.jpeg" alt="Software Development Services" class="service-img">
+                        <div class="overlay">
+                            <div class="text-content">
+                                <h3>Software Development</h3>
+                                <p>Developing custom software solutions tailored to your business needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">My Latest Works</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="image/chimmy.png" alt="E-Commerce Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>E-Commerce Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/home.png" alt="Architectural Designs Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Architectural Designs Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/real.png" alt="Real-Estate Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Real-Estate Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/tech.png" alt="Technological Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Technological Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/Music.png" alt="Music Player Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Music Player Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/milad.png" alt="Shopping Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Shopping Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="image/medvac.png" alt="Medical Website Project" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="portfolio-text">
+                                <h3>Medical Website</h3>
+                                <a href="#" target="_blank" class="view-project"><i class='bx bx-link-external'></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+         
+                <h2 class="section-title">Pricing Plans</h2>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Basic Portfolio Website</h3>
+                        <p class="price-description">A clean and professional single-page website to showcase your work, skills, and contact information. Ideal for individuals and freelancers.</p>
+                        <div class="price-amount">$200 <span>/ ₦300,000</span></div>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>Up to 5 Sections</li>
+                            <li>Contact Form Integration</li>
+                            <li>Mobile Responsive Design</li>
+                            <li>Basic SEO Optimization</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                    </div>
+                    <div class="price-card featured-card">
+                        <h3>Standard Business Website</h3>
+                        <p class="price-description">A multi-page website perfect for small businesses and organizations. Includes essential features to establish your online presence.</p>
+                        <div class="price-amount">$500 <span>/ ₦750,000</span></div>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>Up to 10 Pages</li>
+                            <li>Contact Form & Blog Integration</li>
+                            <li>Social Media Integration</li>
+                            <li>Mobile Responsive Design</li>
+                            <li>Basic SEO Optimization</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Choose Plan</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>E-commerce Starter Website</h3>
+                        <p class="price-description">Start selling online with a basic e-commerce platform. Includes product listings, shopping cart, and secure checkout.</p>
+                        <div class="price-amount">$800 <span>/ ₦1,200,000</span></div>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>Up to 20 Product Listings</li>
+                            <li>Shopping Cart Functionality</li>
+                            <li>Secure Payment Gateway (e.g., Paystack)</li>
+                            <li>Basic Inventory Management</li>
+                            <li>Mobile Responsive Design</li>
+                            <li>Basic SEO Optimization</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Advanced E-commerce Website</h3>
+                        <p class="price-description">A comprehensive e-commerce solution with advanced features for growing online businesses.</p>
+                        <div class="price-amount">$1500+ <span>/ ₦2,250,000+</span></div>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>Unlimited Product Listings</li>
+                            <li>Advanced Filtering & Search</li>
+                            <li>Customer Accounts & Loyalty</li>
+                            <li>Multiple Payment Gateways</li>
+                            <li>Advanced Inventory Management</li>
+                            <li>Marketing Integrations & SEO</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Inquire Now</a>
+                    </div>
+                </div>
+          
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <p class="quote">"Praise delivered an exceptional website for our business. He was professional, highly skilled, and completed the project on time and within budget. Highly recommended!"</p>
+                        <div class="client-info">
+                            <img src="image/client1.jpg" alt="Client 1 Photo" class="client-avatar">
+                            <div class="client-details">
+                                <p class="client-name">Jane Doe</p>
+                                <p class="client-company">CEO, Example Corp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Working with Praise was a breeze! He understood our vision perfectly and translated it into a stunning, functional e-commerce site. We've seen a significant increase in sales."</p>
+                        <div class="client-info">
+                            <img src="image/client2.jpg" alt="Client 2 Photo" class="client-avatar">
+                            <div class="client-details">
+                                <p class="client-name">John Smith</p>
+                                <p class="client-company">Founder, Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"The UI/UX design Praise provided was top-notch. Our users love the new interface, and it has drastically improved our app's user engagement."</p>
+                        <div class="client-info">
+                            <img src="image/client3.jpg" alt="Client 3 Photo" class="client-avatar">
+                            <div class="client-details">
+                                <p class="client-name">Emily White</p>
+                                <p class="client-company">Product Manager, Innovate Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-tabs">
+                        <p class="contact-tab-links active-link" onclick="opentabs('message')" data-contact-target="message"><i class='bx bx-chat'></i>Send a Message</p>
+                        <p class="contact-tab-links" onclick="opentabs('social')" data-contact-target="social"><i class='bx bxs-user-check'></i>Social Media</p>
+                        <p class="contact-tab-links"  onclick="opentabs('call')" data-contact-target="call"><i class='bx bxs-phone-call'></i>Call Me</p>
+                    </div>
+
+                    <div class="contact-tab-contents active-tab" id="message">
+                        <form action="https://formspree.io/f/xgejarar" method="POST" id="contact-form">
+                            <div class="form-group">
+                                <label for="full-name"><i class='bx bxs-user-pin'></i>Full Name</label>
+                                <input type="text" name="name" id="full-name" placeholder="Your Full Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-address"><i class='bx bx-mail-send'></i>E-mail</label>
+                                <input type="email" id="email-address" name="email" placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message-text"><i class='bx bx-envelope'></i>Message</label>
+                                <textarea name="message" id="message-text" placeholder="Enter your message here" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                            <div id="status" class="form-status"></div>
+                        </form>
+                    </div>
+
+                    <div class="contact-tab-contents" id="social">
+                        <h3>Connect with me via:</h3>
+                        <div class="social-links-grid">
+                            <a href="https://wa.me/+2348150555396" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="https://twitter.com/praisecodes001" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.instagram.com/iam.praise19/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                          
+                        </div>
+                        <p class="social-cta">Feel free to reach out on any platform for inquiries or collaborations!</p>
+                    </div>
+
+                    <div class="contact-tab-contents" id="call">
+                        <h3>Prefer to speak?</h3>
+                        <p class="call-cta">You can reach me directly at:</p>
+                        <p class="phone-number"><a href="tel:+2348150555396">+234 815 055 5396</a></p>
+                        <p class="call-note">Available for calls during business hours (9 AM - 7 PM WAT), Monday to Friday.</p>
+                        <p class="call-note">Feel free to send a text or WhatsApp message outside these hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Praise. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top"><i class='bx bx-up-arrow-alt'></i></button>
+
+    <script src="Praise.js"></script>
+    <script>
+        var contacttablinks = document.getElementsByClassName("contact-tab-links");
+        var contacttabcontents = document.getElementsByClassName("contact-tab-contents");
+      
+          
+         function opentabs(content){
+               for(contacttablink of contacttablinks){
+                contacttablink.classList.remove("active-link");
+               }
+            for(contacttabcontent of contacttabcontents){
+              contacttabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(content).classList.add("active-tab");
+      }  
+      </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+              for(tablink of tablinks){
+                   tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </body>
+
+</html>
